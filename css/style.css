@@ -1,0 +1,190 @@
+html,body{
+    margin:0;
+    box-sizing:border-box;
+    overflow-x: hidden;
+  }
+  :root{
+    /*
+       theme for colors
+    */
+    --text-gray:#3f4954;
+    --text-light: #DD20FF;
+    --bg-color: #0F0F0F;
+    --white: #fff;
+    --midnight: #104F55;
+    /* Gradient colors */
+    --sky: linear-gradient(120deg, #D4FC79 0%, #96E6A1 100%);
+    /* background-image: linear-gradient(to top, #DBDCD7 0%, #DDDCD7 24%, #E2C9CC 30%, #E7627D 46%, #B8235A 59%, #801357 71%, #3D1635 84%, #1C1A27 100%); */
+    /* theme for font family */
+    --Lato:'Lato', cursive;
+    --Montserrat: 'Montserrat', cursive;
+    --Oswald: 'Oswald', cursive;
+    --Roboto: 'Roboto', cursive
+  }
+    /* Global classes--------------- */
+   a{
+    text-decoration: none;
+    color:var(--text-gray)
+   }
+    .flex-row{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    ul{
+      list-style-type: none;
+    }
+
+    h1{
+      font-family: var(--Lato);
+      font-size: 2.5rem;
+    }
+    h2{
+      font-family: var(--Roboto);
+      
+    }
+    h3{
+      font-family: var(--Oswald);
+      font-size: 1.3rem;
+    }
+
+    button.btn{
+      border: none;
+      border-radius: 2rem;
+      padding: 1rem 3rem;
+      font-size: 1rem;
+      font-family: var(--Lato);
+      cursor: pointer;
+    }
+      /* Global classes--------------- */
+
+
+
+
+
+
+  /* -----Navbar------- */
+   .nav{ 
+    background: var(--white);
+    padding:0;
+    height:0rem;
+    min-height: 10vh;
+    overflow: hidden;
+  }
+      .nav .nav-menu{
+        justify-content: space-between;
+      }
+  .nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none
+  }
+  .nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+  }
+  .nav .toggle-collapse .toggle-icons{
+    font-size: 1.4rem;
+    color: var(--text-gray)
+  }
+  .nav .nav-items{
+    display: flex;
+    margin: 0;
+  }
+  .nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family:var(--Oswald);
+    font-size: 1.1rem;
+  }
+  .nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem, 0;
+    display: block;
+    font-family: var(--Lato);
+    font-size: 1.6rem
+  }
+  .nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+  }
+  .nav .nav-items .nav-link:hover a{
+    color: var(--white)
+  }
+  .nav .social{
+    padding: 1.4rem 0
+  }
+  .nav .social i{
+    padding: 0 .2rem;
+  }
+  .nav .social i:hover{
+    color:#b1151d;
+  }
+  /* -----NAVBAR-------------- */
+
+  /* Main Content styling starts here----------------------- */
+
+  /* site title------------- */
+
+  main .site-title{
+    background: url('../assets/image\ 5\ .jpg.jpg');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  main .site-title .site-background{
+    padding: 10rem;
+    text-align: center;
+    color: var(--white);
+  }
+
+  main .site-title h1,h3{
+    margin: 3rem;
+  
+  }
+
+  main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+  }
+  main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+  }
+/* site title ends */
+
+/* ---------------blog carousels-------- */
+
+main .blog{
+  background: url('../assets/Abstract.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+}
+
+
+/* -------------blog carousels ends-------- */
+  /* Main content styling ends here------------------ */
+
+  /* a view port less than or equal 750px */
+    @media only screen and (max-width: 750px) {
+      .nav{
+        background: black ;
+      }
+      .nav .nav-menu .nav-items {
+        flex-direction: column;
+      }
+      .nav .toggle-collapse{
+        display: initial;
+      }
+    }
+  /* a view port less than or equal 750px */
+  

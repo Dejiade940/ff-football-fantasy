@@ -1,0 +1,28 @@
+/* font family lato */
+@font-face {
+
+    font-family: lato;
+    src: url('..//Fonts/Lato/Lato-BoldItalic.ttf');
+}
+
+/* font family Monterserrat */ 
+@font-face {
+    font-family: monserrat;
+    src: url('../Fonts/');
+}
+
+
+/* font family oswald */
+
+@font-face {
+    font-family: Oswald;
+    src: url('../Fonts/Oswald/Oswald-VariableFont_wght.ttf');
+
+}
+
+
+/* font family Roboto */
+@font-face {
+    font-family: Roboto;
+    src: url('../Fonts/Roboto/Roboto-MediumItalic.ttf');
+}
